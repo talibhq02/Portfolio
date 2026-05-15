@@ -548,6 +548,21 @@
     line-height: 1.6;
     max-width: 720px;
   }
+  .tl-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 2px;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .tl-link:hover { opacity: 0.75; transform: translateX(2px); }
 
   /* ---------- Beyond Work ---------- */
   .beyond {
@@ -598,15 +613,26 @@
     aspect-ratio: 3/4;
     background: linear-gradient(140deg, var(--red), var(--red-deep));
     border-radius: 4px;
-    padding: 38px 28px;
-    display: flex; flex-direction: column; justify-content: space-between;
-    box-shadow: 18px 18px 0 rgba(181,37,42,0.2);
+    box-shadow: 18px 18px 0 rgba(181,37,42,0.25), 0 6px 20px rgba(0,0,0,0.35);
     transform: rotate(-3deg);
     transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
   }
   .beyond .book:hover { transform: rotate(-1deg) translateY(-4px); }
-  .beyond .book .top { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; opacity: 0.8; }
-  .beyond .book .title {
+  .beyond .book img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .beyond .book-fallback {
+    position: absolute; inset: 0;
+    padding: 38px 28px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .beyond .book-fallback .top { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; opacity: 0.8; color: var(--paper); }
+  .beyond .book-fallback .title {
     font-family: 'Fraunces', serif;
     font-weight: 700;
     font-size: 44px;
@@ -614,8 +640,8 @@
     letter-spacing: -0.03em;
     color: var(--paper);
   }
-  .beyond .book .title em { font-style: italic; font-weight: 500; }
-  .beyond .book .author { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; opacity: 0.85; }
+  .beyond .book-fallback .title em { font-style: italic; font-weight: 500; }
+  .beyond .book-fallback .author { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; opacity: 0.85; color: var(--paper); }
   .beyond .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
   .beyond .ctas .btn-ghost { border-color: var(--paper); color: var(--paper); }
   .beyond .ctas .btn-ghost:hover { background: var(--paper); color: var(--ink); }
@@ -1003,10 +1029,11 @@
       </div>
 
       <div class="tl-item reveal">
-        <div class="date">April 2026 · AI Certified</div>
+        <div class="date">26 April 2026 · AI Certified</div>
         <h4>The AI Masterclass</h4>
         <div class="where">Dhruv Rathee Academy</div>
         <p>Generative AI workflows for content strategy, prompt engineering, and automated competitor analysis.</p>
+        <a href="certificate.pdf" target="_blank" rel="noopener" class="tl-link">View certificate ↗</a>
       </div>
 
       <div class="tl-item reveal">
@@ -1037,9 +1064,12 @@
           </div>
         </div>
         <div class="book">
-          <div class="top">A Novel · 2024</div>
-          <div class="title">Almost,<br /><em>Always.</em></div>
-          <div class="author">Syed Talib Haider</div>
+          <img src="book-cover.png" alt="Almost, Always — a novel by Haider" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="book-fallback" style="display:none;">
+            <div class="top">A Novel · 2024</div>
+            <div class="title">Almost,<br /><em>Always.</em></div>
+            <div class="author">Syed Talib Haider</div>
+          </div>
         </div>
       </div>
     </div>
