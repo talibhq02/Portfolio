@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All work · Syed Talib Haider</title>
+<meta name="description" content="The full work directory of Syed Talib Haider — Editorial Strategist. Published articles, Loom walkthroughs, strategic decks, author pages, affiliate work, and the AI prompt library." />
+<meta name="keywords" content="Syed Talib Haider portfolio, editorial strategist work, content manager portfolio, NFL editor articles, sports journalism India, EssentiallySports, PFSN, Sporting News, AI prompts, content strategy decks" />
+<meta name="author" content="Syed Talib Haider" />
+<meta name="robots" content="index, follow" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="All work · Syed Talib Haider" />
+<meta property="og:description" content="The full work directory — articles, Looms, decks, and author pages." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23F5EFE4'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23B5252A'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg:        #F5EFE4;
+    --bg-2:      #ECE3D2;
+    --ink:       #1A1714;
+    --ink-soft:  #4A4138;
+    --muted:     #7A6F60;
+    --line:      #D9CDB7;
+    --red:       #B5252A;
+    --red-deep:  #8C1B20;
+    --red-soft:  #E8B8BA;
+    --paper:     #FBF7EE;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    background-image: radial-gradient(rgba(26,23,20,0.04) 1px, transparent 1px);
+    background-size: 3px 3px;
+    z-index: 1;
+    mix-blend-mode: multiply;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--red); color: var(--paper); }
+
+  .container { width: min(1100px, 92vw); margin: 0 auto; position: relative; z-index: 2; }
+
+  /* ---------- Nav ---------- */
+  nav {
+    position: sticky; top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    background: rgba(245, 239, 228, 0.75);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 0;
+  }
+  nav .back {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: gap 0.2s, color 0.2s;
+  }
+  nav .back:hover { gap: 14px; color: var(--red); }
+  nav .brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    display: flex; align-items: center; gap: 9px;
+  }
+  nav .brand .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--red);
+    box-shadow: 0 0 0 4px rgba(181,37,42,0.15);
+  }
+
+  /* ---------- Header ---------- */
+  header.page {
+    padding: 80px 0 50px;
+  }
+  header.page .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 18px;
+    display: inline-block;
+    border: 1px solid var(--red);
+    padding: 7px 12px;
+    border-radius: 4px;
+  }
+  header.page h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(48px, 8vw, 112px);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  header.page h1 em { color: var(--red); font-style: italic; font-weight: 500; }
+  header.page p {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  /* ---------- Index strip ---------- */
+  .index-strip {
+    margin-top: 36px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; gap: 22px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .index-strip a {
+    color: var(--ink-soft);
+    transition: color 0.2s;
+  }
+  .index-strip a:hover { color: var(--red); }
+  .index-strip span { color: var(--muted); }
+
+  /* ---------- Sections ---------- */
+  section { padding: 60px 0; position: relative; z-index: 2; }
+  section.first { padding-top: 40px; }
+
+  .sec-head {
+    display: flex; align-items: baseline; gap: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px dashed var(--line);
+    padding-bottom: 14px;
+  }
+  .sec-head .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--red);
+  }
+  .sec-head h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1;
+  }
+  .sec-head h2 em { color: var(--red); font-style: italic; font-weight: 500; }
+  .sec-intro {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin-bottom: 22px;
+  }
+
+  /* ---------- Item rows ---------- */
+  .row {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: baseline;
+    transition: padding-left 0.2s, background 0.2s;
+  }
+  .row:hover {
+    padding-left: 10px;
+    background: linear-gradient(90deg, rgba(181,37,42,0.04), transparent 60%);
+  }
+  .row .tag-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 3px;
+  }
+  .row .title-wrap h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .row .title-wrap h3 a {
+    background-image: linear-gradient(var(--red), var(--red));
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, color 0.2s;
+    padding-bottom: 2px;
+  }
+  .row .title-wrap h3 a:hover {
+    background-size: 100% 1px;
+    color: var(--red);
+  }
+  .row .title-wrap p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    max-width: 620px;
+  }
+  .row .open {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: gap 0.2s;
+    white-space: nowrap;
+  }
+  .row .open:hover { gap: 12px; }
+
+  @media (max-width: 720px) {
+    .row {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .row .open { justify-self: start; }
+  }
+
+  /* ---------- Affiliate grid ---------- */
+  .affiliate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 6px;
+  }
+  .aff-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 16px;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 110px;
+  }
+  .aff-card:hover {
+    border-color: var(--red);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px -10px rgba(140,27,32,0.25);
+  }
+  .aff-card .market {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .aff-card .name {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+  .aff-card .arrow {
+    margin-top: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: flex; align-items: center; gap: 6px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 36px 0 28px;
+    margin-top: 40px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    position: relative; z-index: 2;
+  }
+  footer .inner {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  }
+  footer a:hover { color: var(--red); }
+
+  /* ---------- Reveal ---------- */
+  .reveal {
+    opacity: 0; transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container inner">
+    <a href="index.html" class="back">← Back to home</a>
+    <a href="index.html" class="brand">
+      <span class="dot"></span>
+      Syed Talib Haider
+    </a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="container">
+    <span class="tag">The full directory</span>
+    <h1>All <em>work.</em></h1>
+    <p>Every published piece, walkthrough, deck, author page, and affiliate footprint, in one place. Updated as the work lands.</p>
+
+    <div class="index-strip">
+      <a href="#articles">01 · Articles</a>
+      <span>·</span>
+      <a href="#looms">02 · Looms</a>
+      <span>·</span>
+      <a href="#decks">03 · Decks</a>
+      <span>·</span>
+      <a href="#authors">04 · Author pages</a>
+      <span>·</span>
+      <a href="#affiliate">05 · Affiliate</a>
+      <span>·</span>
+      <a href="#prompts">06 · Prompt library</a>
+      <span>·</span>
+      <a href="#socials">07 · Socials</a>
+    </div>
+  </div>
+</header>
+
+<!-- ---------- ARTICLES ---------- -->
+<section id="articles" class="first">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">01</span>
+      <h2>Published <em>articles.</em></h2>
+    </div>
+    <p class="sec-intro reveal">Marquee pieces and exclusives that delivered measurable reach.</p>
+
+    <div class="row reveal">
+      <div class="tag-mono">Exclusive · ES</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.essentiallysports.com/nfl-news-essentiallysports-fancast-exclusive-despite-rob-gronkowskis-humble-nature-bro-chris-gronkowski-reveals-his-biggest-pet-peeve-with-patriots-legend/" target="_blank" rel="noopener">The Chris Gronkowski Exclusive</a></h3>
+        <p>Exclusive interview with the former NFL player and Ice Shaker CEO. Held #1 on Google for three weeks and drew direct social engagement from Gronk himself.</p>
+      </div>
+      <a class="open" href="https://www.essentiallysports.com/nfl-news-essentiallysports-fancast-exclusive-despite-rob-gronkowskis-humble-nature-bro-chris-gronkowski-reveals-his-biggest-pet-peeve-with-patriots-legend/" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Working doc</div>
+      <div class="title-wrap">
+        <h3><a href="https://docs.google.com/document/d/1En6X9k5tc5XbVmRnRfs7gk5icx8dEvJ6BCFA865wPMU/edit?usp=sharing" target="_blank" rel="noopener">Gronkowski exclusive · working doc</a></h3>
+        <p>The behind-the-scenes editorial doc for the exclusive. Drafting, structure notes, and source organisation.</p>
+      </div>
+      <a class="open" href="https://docs.google.com/document/d/1En6X9k5tc5XbVmRnRfs7gk5icx8dEvJ6BCFA865wPMU/edit?usp=sharing" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Discover virality</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.essentiallysports.com/nfl-active-news-excited-falcons-outcast-kirk-cousins-confirms-announces-career-move-after-bagging-hundred-m/" target="_blank" rel="noopener">Kirk Cousins · The Falcons feature</a></h3>
+        <p>Headline call that broke through Google Discover. 2M+ Discover clicks.</p>
+      </div>
+      <a class="open" href="https://www.essentiallysports.com/nfl-active-news-excited-falcons-outcast-kirk-cousins-confirms-announces-career-move-after-bagging-hundred-m/" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- LOOMS ---------- -->
+<section id="looms">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">02</span>
+      <h2>Loom <em>walkthroughs.</em></h2>
+    </div>
+    <p class="sec-intro reveal">Short, candid videos on what I've built, what's worked, and how I work day to day.</p>
+
+    <div class="row reveal">
+      <div class="tag-mono">Loom 01 · Wins</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.loom.com/share/f19294eede15442bad8450a3977e644f" target="_blank" rel="noopener">My published novel and the Gronkowski exclusive</a></h3>
+        <p>The proudest professional moment (Gronk exclusive) sitting next to the proudest personal one: my self-published novel, <em>Almost, Always</em>.</p>
+      </div>
+      <a class="open" href="https://www.loom.com/share/f19294eede15442bad8450a3977e644f" target="_blank" rel="noopener">Watch ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Loom 02 · Metrics</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.loom.com/share/fda446a7f0b341c7b3258535cd0652af" target="_blank" rel="noopener">How I measure content success</a></h3>
+        <p>What made the 2M+ Discover piece land, why Apple News asks a different game of you, and where Google is leaning on personalisation now.</p>
+      </div>
+      <a class="open" href="https://www.loom.com/share/fda446a7f0b341c7b3258535cd0652af" target="_blank" rel="noopener">Watch ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Loom 03 · AI stack</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.loom.com/share/d9b527abfd064afb9b2690d2128d81ce" target="_blank" rel="noopener">How I use AI daily for writing</a></h3>
+        <p>Claude Sonnet and Gemini Pro in the workflow. Ideation, competitor scans, trend extraction, fact-check. Human oversight is still the last gate.</p>
+      </div>
+      <a class="open" href="https://www.loom.com/share/d9b527abfd064afb9b2690d2128d81ce" target="_blank" rel="noopener">Watch ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- DECKS ---------- -->
+<section id="decks">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">03</span>
+      <h2>Strategic <em>decks.</em></h2>
+    </div>
+    <p class="sec-intro reveal">Original observation work and the creative pivot pitch.</p>
+
+    <div class="row reveal">
+      <div class="tag-mono">Case study</div>
+      <div class="title-wrap">
+        <h3><a href="https://docs.google.com/presentation/d/1LZ0JV8MQBnev-dOP9qBhCyeV3lbLSNiYDUPfPT3wjWI/edit?usp=sharing" target="_blank" rel="noopener">Loudness vs Luxury</a></h3>
+        <p>A strategic observation on India's D2C travel market. High-visibility utility against premium aspiration. Which way is the audience leaning?</p>
+      </div>
+      <a class="open" href="https://docs.google.com/presentation/d/1LZ0JV8MQBnev-dOP9qBhCyeV3lbLSNiYDUPfPT3wjWI/edit?usp=sharing" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Pitch deck</div>
+      <div class="title-wrap">
+        <h3><a href="https://docs.google.com/presentation/d/1YSQIUBN8XeeiKpxt2CCpMKhGvWNPA98hg0g7n-Wlcpk/edit?usp=sharing" target="_blank" rel="noopener">No fluff. Just hooks.</a></h3>
+        <p>The creative pivot deck. Marketing-trained, newsroom-tested. Built around the only metric that matters: stopping the scroll.</p>
+      </div>
+      <a class="open" href="https://docs.google.com/presentation/d/1YSQIUBN8XeeiKpxt2CCpMKhGvWNPA98hg0g7n-Wlcpk/edit?usp=sharing" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- AUTHOR PAGES ---------- -->
+<section id="authors">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">04</span>
+      <h2>Author <em>pages.</em></h2>
+    </div>
+    <p class="sec-intro reveal">Full bylined catalogue across current and recent publications.</p>
+
+    <div class="row reveal">
+      <div class="tag-mono">PFSN · 2025–now</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.profootballnetwork.com/author/thaider/" target="_blank" rel="noopener">Talib Haider · Pro Football & Sports Network</a></h3>
+        <p>Content Manager & Copyeditor. Current author page with all bylined and edited work.</p>
+      </div>
+      <a class="open" href="https://www.profootballnetwork.com/author/thaider/" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">ES · 2024–25</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.essentiallysports.com/author/syed-talib/" target="_blank" rel="noopener">Syed Talib · NFL Editor at EssentiallySports</a></h3>
+        <p>Writer → Senior Writer → Editor. Includes the Gronk exclusive, the Kirk Cousins feature, and Super Bowl LIX coverage that hit 3M views in 24 hours.</p>
+      </div>
+      <a class="open" href="https://www.essentiallysports.com/author/syed-talib/" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- AFFILIATE ---------- -->
+<section id="affiliate">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">05</span>
+      <h2>Global <em>affiliate</em> work.</h2>
+    </div>
+    <p class="sec-intro reveal">500+ articles produced for <strong>The Sporting News</strong> across five affiliate markets. Each region adapted in tone, search behaviour, and conversion intent.</p>
+
+    <div class="affiliate-grid reveal">
+      <a class="aff-card" href="https://www.sportingnews.com/us/author/syed-talib-haider" target="_blank" rel="noopener">
+        <div>
+          <div class="market">United States</div>
+          <div class="name">Sporting News · US</div>
+        </div>
+        <div class="arrow">View author page ↗</div>
+      </a>
+      <a class="aff-card" href="https://www.sportingnews.com/uk/author/syed-talib-haider" target="_blank" rel="noopener">
+        <div>
+          <div class="market">United Kingdom</div>
+          <div class="name">Sporting News · UK</div>
+        </div>
+        <div class="arrow">View author page ↗</div>
+      </a>
+      <a class="aff-card" href="https://www.sportingnews.com/ca/author/syed-talib-haider" target="_blank" rel="noopener">
+        <div>
+          <div class="market">Canada</div>
+          <div class="name">Sporting News · CA</div>
+        </div>
+        <div class="arrow">View author page ↗</div>
+      </a>
+      <a class="aff-card" href="https://www.sportingnews.com/au/author/syed-talib-haider" target="_blank" rel="noopener">
+        <div>
+          <div class="market">Australia</div>
+          <div class="name">Sporting News · AU</div>
+        </div>
+        <div class="arrow">View author page ↗</div>
+      </a>
+      <a class="aff-card" href="https://www.sportingnews.com/in/author/syed-talib-haider" target="_blank" rel="noopener">
+        <div>
+          <div class="market">India</div>
+          <div class="name">Sporting News · IN</div>
+        </div>
+        <div class="arrow">View author page ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- PROMPTS ---------- -->
+<section id="prompts">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">06</span>
+      <h2>The <em>prompt</em> library.</h2>
+    </div>
+    <p class="sec-intro reveal">Working doc of the prompts I use in production. Ideation, competitor analysis, trend extraction, fact-checking. Built around Claude Sonnet and Gemini Pro.</p>
+
+    <div class="row reveal">
+      <div class="tag-mono">Working doc</div>
+      <div class="title-wrap">
+        <h3><a href="https://docs.google.com/document/d/1I5HI_wrtnuY-Oo0dYfZtgoY3-JgJTOLAmgu6Gk2LVvY/edit?usp=sharing" target="_blank" rel="noopener">Prompts · The editorial AI library</a></h3>
+        <p>Live prompt collection. Updated as workflows evolve.</p>
+      </div>
+      <a class="open" href="https://docs.google.com/document/d/1I5HI_wrtnuY-Oo0dYfZtgoY3-JgJTOLAmgu6Gk2LVvY/edit?usp=sharing" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- SOCIALS ---------- -->
+<section id="socials">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">07</span>
+      <h2>Find me <em>online.</em></h2>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Professional</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.linkedin.com/in/syed-talib-h-a2306b13a/" target="_blank" rel="noopener">LinkedIn</a></h3>
+        <p>The professional record. Endorsements, full history, recommendations.</p>
+      </div>
+      <a class="open" href="https://www.linkedin.com/in/syed-talib-h-a2306b13a/" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">X / Twitter</div>
+      <div class="title-wrap">
+        <h3><a href="https://x.com/thq_lfc" target="_blank" rel="noopener">@thq_lfc</a></h3>
+        <p>Sports, takes, headlines, the occasional thought on Liverpool.</p>
+      </div>
+      <a class="open" href="https://x.com/thq_lfc" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Instagram</div>
+      <div class="title-wrap">
+        <h3><a href="https://www.instagram.com/talibhq_/" target="_blank" rel="noopener">@talibhq_</a></h3>
+        <p>The personal feed.</p>
+      </div>
+      <a class="open" href="https://www.instagram.com/talibhq_/" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container inner">
+    <div>© 2026 Syed Talib Haider</div>
+    <div>Delhi · India</div>
+    <div><a href="index.html">← Back to home</a></div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
