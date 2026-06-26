@@ -449,24 +449,18 @@
     gap: 18px;
   }
 
-  /* ── Substack card: full-width bottom row ── */
+  /* ── Substack card: full-width bottom row, banner on top ── */
   .card.substack {
     grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 0;
-    min-height: 160px;
+    padding: 0;
+    min-height: unset;
     background: var(--gold-light);
     border: 1px solid var(--gold);
     position: relative;
     overflow: hidden;
-  }
-  .card.substack::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(105deg, rgba(160,120,40,0.06) 0%, transparent 60%);
-    pointer-events: none;
   }
   .card.substack:hover {
     transform: translateY(-4px);
@@ -474,19 +468,18 @@
     box-shadow: 0 10px 30px -10px rgba(160,120,40,0.3);
   }
   .substack-banner {
-    width: 200px;
-    min-height: 100%;
+    width: 100%;
+    height: 120px;
     overflow: hidden;
-    flex-shrink: 0;
-    border-right: 1px solid rgba(160,120,40,0.25);
+    border-bottom: 1px solid rgba(160,120,40,0.2);
     position: relative;
+    background: #fff;
   }
   .substack-banner img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    filter: saturate(0.85);
   }
   .substack-banner-fallback {
     position: absolute; inset: 0;
@@ -506,6 +499,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
   }
   .substack-body .num {
     font-family: 'JetBrains Mono', monospace;
@@ -528,7 +522,6 @@
     line-height: 1.55;
     color: var(--ink-soft);
     margin-bottom: 0;
-    max-width: 680px;
   }
   .substack-body .foot {
     display: flex; align-items: center; justify-content: space-between;
@@ -541,16 +534,8 @@
     color: var(--gold);
     text-transform: uppercase;
   }
-  .substack-body .foot .arrow {
-    color: var(--gold);
-    transition: transform 0.2s;
-  }
+  .substack-body .foot .arrow { color: var(--gold); transition: transform 0.2s; }
   .card.substack:hover .substack-body .foot .arrow { transform: translate(4px, -4px); }
-
-  @media (max-width: 720px) {
-    .card.substack { grid-template-columns: 1fr; }
-    .substack-banner { width: 100%; height: 120px; border-right: none; border-bottom: 1px solid rgba(160,120,40,0.25); }
-  }
 
   /* ---------- Standard cards ---------- */
   .card {
@@ -1006,7 +991,7 @@
           <div>
             <div class="num">04 · Haiderlogy · Substack</div>
             <h3>Political & cultural analysis. Long reads with a point of view.</h3>
-            <p>A Substack covering the intersections of politics, culture, society, and everything that goes inside my head. It's raw, but written with the same editorial precision that drives the newsroom work. Longer form, sharper angles, no algorithmic concessions. The place where the writing goes when it doesn't fit a desk brief.</p>
+            <p>A Substack covering the intersections of politics, culture, and society — written with the same editorial precision that drives the newsroom work. Longer form, sharper angles, no algorithmic concessions. The place where the writing goes when it doesn't fit a desk brief.</p>
           </div>
           <div class="foot">
             <span>haiderlogy.substack.com</span>
