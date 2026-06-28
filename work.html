@@ -57,7 +57,6 @@
 
   .container { width: min(1100px, 92vw); margin: 0 auto; position: relative; z-index: 2; }
 
-  /* ---------- Nav ---------- */
   nav {
     position: sticky; top: 0;
     z-index: 50;
@@ -92,7 +91,6 @@
     box-shadow: 0 0 0 4px rgba(181,37,42,0.15);
   }
 
-  /* ---------- Header ---------- */
   header.page {
     padding: 80px 0 50px;
   }
@@ -125,7 +123,6 @@
     line-height: 1.6;
   }
 
-  /* ---------- Index strip ---------- */
   .index-strip {
     margin-top: 36px;
     padding: 18px 0;
@@ -144,7 +141,6 @@
   .index-strip a:hover { color: var(--red); }
   .index-strip span { color: var(--muted); }
 
-  /* ---------- Sections ---------- */
   section { padding: 60px 0; position: relative; z-index: 2; }
   section.first { padding-top: 40px; }
 
@@ -176,7 +172,6 @@
     margin-bottom: 22px;
   }
 
-  /* ---------- Item rows ---------- */
   .row {
     display: grid;
     grid-template-columns: 90px 1fr auto;
@@ -244,7 +239,6 @@
     .row .open { justify-self: start; }
   }
 
-  /* ---------- Affiliate grid ---------- */
   .affiliate-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -290,7 +284,6 @@
     display: flex; align-items: center; gap: 6px;
   }
 
-  /* ---------- Footer ---------- */
   footer {
     border-top: 1px solid var(--line);
     padding: 36px 0 28px;
@@ -307,7 +300,6 @@
   }
   footer a:hover { color: var(--red); }
 
-  /* ---------- Reveal ---------- */
   .reveal {
     opacity: 0; transform: translateY(16px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -331,7 +323,7 @@
   <div class="container">
     <span class="tag">The full directory</span>
     <h1>All <em>work.</em></h1>
-    <p>Every published piece, walkthrough, deck, author page, and affiliate footprint, in one place. Updated as the work lands.</p>
+    <p>Every published piece, walkthrough, deck, script, author page, and affiliate footprint, in one place. Updated as the work lands.</p>
 
     <div class="index-strip">
       <a href="#articles">01 · Articles</a>
@@ -340,13 +332,15 @@
       <span>·</span>
       <a href="#decks">03 · Decks</a>
       <span>·</span>
-      <a href="#authors">04 · Author pages</a>
+      <a href="#scripts">04 · Scripts</a>
       <span>·</span>
-      <a href="#affiliate">05 · Affiliate</a>
+      <a href="#authors">05 · Author pages</a>
       <span>·</span>
-      <a href="#prompts">06 · Prompt library</a>
+      <a href="#affiliate">06 · Affiliate</a>
       <span>·</span>
-      <a href="#socials">07 · Socials</a>
+      <a href="#prompts">07 · Prompt library</a>
+      <span>·</span>
+      <a href="#socials">08 · Socials</a>
     </div>
   </div>
 </header>
@@ -474,11 +468,40 @@
   </div>
 </section>
 
+<!-- ---------- SCRIPTS ---------- -->
+<section id="scripts">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="num">04</span>
+      <h2>Video <em>scripts.</em></h2>
+    </div>
+    <p class="sec-intro reveal">Spec scripts written in the voice of real creators — researched, structured, and built for platform-native storytelling.</p>
+
+    <div class="row reveal">
+      <div class="tag-mono">Script · 01</div>
+      <div class="title-wrap">
+        <h3><a href="https://docs.google.com/document/d/1BFGcchoRkngTWYRkzqk9ANar73H-FKELTG8_kfaoJVU/edit?usp=sharing" target="_blank" rel="noopener">I Lived With Kazakhstan's Last Nomads</a></h3>
+        <p>A long-form travel video script written in the voice of Sean Hammond. Kazakhstan's steppe, eagle hunters, nomadic life — hooks, B-roll directions, save points, and 10 Instagram captions included.</p>
+      </div>
+      <a class="open" href="https://docs.google.com/document/d/1BFGcchoRkngTWYRkzqk9ANar73H-FKELTG8_kfaoJVU/edit?usp=sharing" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+
+    <div class="row reveal">
+      <div class="tag-mono">Script · 02</div>
+      <div class="title-wrap">
+        <h3><a href="https://docs.google.com/document/d/1xPVZIHhLlSi6sPm9x5J5ZhA2qrIw76JiqjiID4-BMKg/edit?usp=sharing" target="_blank" rel="noopener">If It Doesn't Work Out Abroad, It Won't Work Out in India</a></h3>
+        <p>A YouTube explainer script written in the voice of Murrad, an Indian study-abroad creator. Data-driven, direct-to-camera format covering Plan B myths, the 22% unemployment reality, and the truth about studying abroad in 2026.</p>
+      </div>
+      <a class="open" href="https://docs.google.com/document/d/1xPVZIHhLlSi6sPm9x5J5ZhA2qrIw76JiqjiID4-BMKg/edit?usp=sharing" target="_blank" rel="noopener">Open ↗</a>
+    </div>
+  </div>
+</section>
+
 <!-- ---------- AUTHOR PAGES ---------- -->
 <section id="authors">
   <div class="container">
     <div class="sec-head reveal">
-      <span class="num">04</span>
+      <span class="num">05</span>
       <h2>Author <em>pages.</em></h2>
     </div>
     <p class="sec-intro reveal">Full bylined catalogue across current and recent publications.</p>
@@ -486,8 +509,8 @@
     <div class="row reveal">
       <div class="tag-mono">PFSN · 2025–now</div>
       <div class="title-wrap">
-        <h3><a href="https://www.profootballnetwork.com/author/thaider/" target="_blank" rel="noopener">Talib Haider · Pro Football & Sports Network</a></h3>
-        <p>Content Manager & Copyeditor. Current author page with all bylined and edited work.</p>
+        <h3><a href="https://www.profootballnetwork.com/author/thaider/" target="_blank" rel="noopener">Talib Haider · Pro Football &amp; Sports Network</a></h3>
+        <p>Content Manager &amp; Copyeditor. Current author page with all bylined and edited work.</p>
       </div>
       <a class="open" href="https://www.profootballnetwork.com/author/thaider/" target="_blank" rel="noopener">Open ↗</a>
     </div>
@@ -507,7 +530,7 @@
 <section id="affiliate">
   <div class="container">
     <div class="sec-head reveal">
-      <span class="num">05</span>
+      <span class="num">06</span>
       <h2>Global <em>affiliate</em> work.</h2>
     </div>
     <p class="sec-intro reveal">500+ articles produced for <strong>The Sporting News</strong> across five affiliate markets. Each region adapted in tone, search behaviour, and conversion intent.</p>
@@ -556,7 +579,7 @@
 <section id="prompts">
   <div class="container">
     <div class="sec-head reveal">
-      <span class="num">06</span>
+      <span class="num">07</span>
       <h2>The <em>prompt</em> library.</h2>
     </div>
     <p class="sec-intro reveal">Working doc of the prompts I use in production. Ideation, competitor analysis, trend extraction, fact-checking. Built around Claude Sonnet and Gemini Pro.</p>
@@ -576,7 +599,7 @@
 <section id="socials">
   <div class="container">
     <div class="sec-head reveal">
-      <span class="num">07</span>
+      <span class="num">08</span>
       <h2>Find me <em>online.</em></h2>
     </div>
 
