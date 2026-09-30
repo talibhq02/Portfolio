@@ -4,19 +4,19 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Syed Talib Haider · Editorial Strategist // Audience Psychology</title>
-<meta name="description" content="Syed Talib Haider — Editorial Strategist, Content Manager, Senior Editor, and Copywriter. 5 years in digital sports media. Writing, SEO, Google Discover, E-E-A-T, AI-assisted editorial workflows (Claude, Gemini). Open to editorial leadership, content strategy, copywriting, scriptwriting, and consulting roles. Delhi, India." />
+<meta name="description" content="Syed Talib Haider — Editorial Strategist, Creative Copywriter & Brand Strategist. 5+ years across sports media and brand copywriting. Meta ad copy, social media writing, ICP frameworks, Google Discover, E-E-A-T, AI-assisted editorial workflows. Delhi, India." />
 <meta name="keywords" content="editorial strategist, content manager, content strategist, senior editor, managing editor, copy editor, copywriter, senior copywriter, scriptwriter, screenwriter, content writer, brand writer, longform writer, sports journalist, NFL editor, SEO editor, audience growth editor, newsletter strategist, AI content strategist, editor in chief, deputy editor, editorial lead, head of content, head of editorial, content operations, content marketing manager, brand storyteller, Google Discover, E-E-A-T, Claude Sonnet, Gemini Pro, prompt engineering, journalism India, Delhi journalist, EssentiallySports, Pro Football Sports Network, PFSN, Sporting News, Syed Talib Haider, Talib Haider, Haider" />
 <meta name="author" content="Syed Talib Haider" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Syed Talib Haider · Editorial Strategist & Content Manager" />
-<meta property="og:description" content="No fluff. Just hooks. 5 years in fast-paced sports newsrooms. Headlines that stopped the scroll, frameworks that ranked, AI workflows that kept originality intact. Open to editorial leadership and content strategy roles." />
+<meta property="og:description" content="No fluff. Just hooks. Editorial strategist turned creative copywriter. Sports media to brand strategy — Meta ad copy, social content, ICP frameworks, and the audience psychology that runs through all of it." />
 <meta property="profile:first_name" content="Syed Talib" />
 <meta property="profile:last_name" content="Haider" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Syed Talib Haider · Editorial Strategist" />
-<meta name="twitter:description" content="No fluff. Just hooks. 5 years in fast-paced sports newsrooms. Open to editorial leadership and content strategy roles." />
+<meta name="twitter:description" content="No fluff. Just hooks. Editorial strategist turned creative copywriter. Meta ad copy, brand content, audience psychology." />
 
 <script type="application/ld+json">
 {
@@ -24,8 +24,8 @@
   "@type": "Person",
   "name": "Syed Talib Haider",
   "alternateName": ["Haider", "Talib Haider"],
-  "jobTitle": "Editorial Strategist, Content Manager & Copywriter",
-  "description": "Editorial strategist with 5+ years in digital sports media. Specialist in audience psychology, SEO, Google Discover optimisation, E-E-A-T, and AI-assisted editorial workflows.",
+  "jobTitle": "Creative Copywriter, Brand Strategist & Editorial Strategist",
+  "description": "Creative copywriter and editorial strategist with 5+ years across digital sports media and brand copywriting. Specialist in audience psychology, Meta ad copy, ICP frameworks, social media content, SEO, Google Discover, E-E-A-T, and AI-assisted editorial workflows.",
   "email": "syedtalibhaider02@gmail.com",
   "telephone": "+91-9910705987",
   "address": {
@@ -41,12 +41,16 @@
     "https://www.profootballnetwork.com/author/thaider/",
     "https://haiderlogy.substack.com/"
   ],
-  "knowsAbout": ["Editorial Strategy","Content Management","Writing","Copywriting","Scriptwriting","SEO","Google Discover","E-E-A-T","Headline Writing","Audience Psychology","Newsletter Strategy","AI Workflow Design","Claude Sonnet","Gemini Pro","Apple News","Sports Journalism","Affiliate Content","Prompt Engineering","Brand Storytelling"],
+  "knowsAbout": ["Creative Copywriting","Brand Strategy","Meta Ad Copy","ICP Frameworks","Social Media Writing","Script Writing","Editorial Strategy","Content Management","Writing","SEO","Google Discover","E-E-A-T","Headline Writing","Audience Psychology","Newsletter Strategy","AI Workflow Design","Claude Sonnet","Gemini Pro","Apple News","Sports Journalism","Affiliate Content","Prompt Engineering","Brand Storytelling"],
   "alumniOf": [
     {"@type":"EducationalOrganization","name":"JIMS (GGSIPU)"},
     {"@type":"EducationalOrganization","name":"Dhruv Rathee Academy — The AI Masterclass"}
   ],
-  "worksFor": {"@type":"Organization","name":"Pro Football & Sports Network"}
+  "worksFor": [
+    {"@type":"Organization","name":"House of Shafaq"},
+    {"@type":"Organization","name":"The Real You"},
+    {"@type":"Organization","name":"Pro Football & Sports Network"}
+  ]
 }
 </script>
 
@@ -442,11 +446,91 @@
   .manifesto-quote em { font-style: italic; color: var(--red); font-weight: 500; }
 
   /* ---------- Projects Grid ---------- */
-  /* Top row: 3 cols. Bottom row: Substack full-width */
+  /* Row 1: 3 cols. Row 2: 2 equal cols. Row 3: Substack full-width */
   .projects {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 18px;
+  }
+
+
+  /* ── Pivot card: full-width, splits into two clickable halves ── */
+  .pivot-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .pivot-header {
+    padding: 22px 24px 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .pivot-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .pivot-side {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s;
+    position: relative;
+  }
+  .pivot-side:first-child {
+    border-right: 1px solid var(--line);
+  }
+  .pivot-left:hover { background: rgba(181,37,42,0.04); }
+  .pivot-right:hover { background: rgba(26,23,20,0.04); }
+  .pivot-side-label {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .pivot-side-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .pivot-side-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    flex: 1;
+  }
+  .pivot-side-foot {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pivot-arrow {
+    color: var(--red);
+    transition: transform 0.2s;
+  }
+  .pivot-side:hover .pivot-arrow { transform: translate(3px, -3px); }
+  .pivot-left .pivot-side-label { color: var(--red); }
+
+  /* Mobile: stack pivot halves vertically */
+  @media (max-width: 640px) {
+    .pivot-split { grid-template-columns: 1fr; }
+    .pivot-side:first-child { border-right: none; border-bottom: 1px solid var(--line); }
   }
 
   /* ── Substack card: full-width bottom row, banner on top ── */
@@ -824,7 +908,7 @@
 <header class="hero" id="top">
   <div class="container hero-grid">
     <div>
-      <span class="tag">Editorial Strategist // Audience Psychology</span>
+      <span class="tag">Creative Copywriter · Brand Strategist · Editorial Strategist</span>
       <h1>
         <span class="word">No</span> <span class="word">fluff.</span><br />
         <span class="word">Just</span> <span class="word red">hooks.</span>
@@ -895,17 +979,25 @@
           Then comes AI integration. I'll be honest, many traditionalists are still skeptical for good reason. Growth-first newsrooms learned to use the tools. I sit firmly in the second camp. Built a Strategic AI Stack around Gemini and Claude for the heavy lifting: trend extraction, competitor scans, fact-check. <em class="pull">The machine handles the heavy lifting, while I fry my brain wholly and solely on narration.</em> AI can't replace the storyteller, but it will kill the average writer scrambling to position his work.
         </p>
         <p>
+          In July 2026, I pivoted into brand copywriting and social media strategy. Now I write Meta ad copy, ICP-driven creative frameworks, and social content for brands at <span class="pull">House of Shafaq</span> — a Dubai-based production agency — and across clients at <span class="pull">The Real You</span>. The audience psychology underneath hasn't changed. The canvas has.
+        </p>
+        <p>
           Outside the desk: cinephile. Preminger, Hitchcock, Wilder, Kubrick, Scorsese, Spielberg. I've rinsed the canon and I keep going back. Liverpool on weekends. Reading when the slump lifts. A self-published poetry collection, <em>Almost, Always</em>, sitting on Pothi and Lulu.
         </p>
         <div class="skills">
-          <span class="skill hot">GA4</span>
+          <span class="skill hot">Meta Ad Copy</span>
+          <span class="skill hot">ICP Frameworks</span>
+          <span class="skill hot">Social Media Writing</span>
           <span class="skill hot">Google Discover</span>
           <span class="skill hot">E-E-A-T</span>
+          <span class="skill">Brand Strategy</span>
+          <span class="skill">Script Writing</span>
           <span class="skill">Headline Writing</span>
           <span class="skill">Audience Psychology</span>
           <span class="skill">SEO</span>
           <span class="skill">Newsletter Strategy</span>
           <span class="skill">Editorial Management</span>
+          <span class="skill">GA4</span>
           <span class="skill">Claude Sonnet</span>
           <span class="skill">Gemini Pro</span>
           <span class="skill">AI Workflow Design</span>
@@ -953,24 +1045,10 @@
         </div>
       </a>
 
-      <!-- 02 · Discover virality -->
-      <a class="card accent reveal" href="https://www.essentiallysports.com/nfl-active-news-excited-falcons-outcast-kirk-cousins-confirms-announces-career-move-after-bagging-hundred-m/" target="_blank" rel="noopener">
-        <div>
-          <div class="num">02 · Discover virality</div>
-          <div class="metric" style="color: var(--paper);"><span class="metric-num" data-target="2" data-suffix="M+">2M+</span> <small style="color: rgba(251,247,238,0.85);">Discover clicks</small></div>
-          <h3>Kirk Cousins. The Falcons feature.</h3>
-          <p>Generated 2M+ Google Discover clicks via a Kirk Cousins career-move feature on the ES NFL desk. Built the headline and angle around audience intent and algorithm signals at the time of publish.</p>
-        </div>
-        <div class="foot">
-          <span>EssentiallySports</span>
-          <span class="arrow">↗</span>
-        </div>
-      </a>
-
-      <!-- 03 · Crisis pivot -->
+      <!-- 02 · Crisis pivot -->
       <a class="card reveal" href="https://www.profootballnetwork.com/author/thaider/" target="_blank" rel="noopener">
         <div>
-          <div class="num">03 · Crisis pivot</div>
+          <div class="num">02 · Crisis pivot</div>
           <div class="metric"><span class="metric-num" data-target="1.75" data-suffix="M">1.75M</span> <small>Apple News views</small></div>
           <h3>April 2026 Google update. Held the line.</h3>
           <p>Drove 1.75M combined Apple News views during the April 2026 Google update by shifting PFSN's focus toward high-intent audience segments. Apple News held the line while Discover wavered industry-wide.</p>
@@ -980,6 +1058,33 @@
           <span class="arrow">↗</span>
         </div>
       </a>
+
+      <!-- 03 · Career Pivot — HOS + TRU combined card, full-width -->
+      <div class="card pivot-card reveal" style="grid-column: 1 / -1; padding: 0; overflow: hidden; min-height: unset;">
+        <div class="pivot-header">
+          <div class="num" style="color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.14em; margin-bottom: 10px;">03 · The Pivot · Brand Copywriting &amp; Strategy</div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: clamp(18px, 2.8vw, 26px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; color: var(--ink); margin-bottom: 10px;">July 2026. Newsroom to brand copy.</h3>
+          <p style="font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; max-width: 820px;">Five years reading audience psychology in sports media. In July 2026, I took that same instinct — what makes someone stop, read, and act — and applied it to brand copywriting. Now writing Meta ad copy, ICP frameworks, social content, and creator scripts for two clients simultaneously.</p>
+        </div>
+        <div class="pivot-split">
+          <a class="pivot-side pivot-left" href="https://www.facebook.com/ads/library/?id=1502724691871767" target="_blank" rel="noopener">
+            <div class="pivot-side-label">House of Shafaq</div>
+            <div class="pivot-side-sub">Dubai · Production &amp; Creator Agency</div>
+            <p class="pivot-side-desc">Creative Copywriter &amp; Strategist. Built ICP-persona messaging matrices and scripted talking-head creator videos for BurntFilter across two avatar profiles. Meta lead-gen ad copy live.</p>
+            <div class="pivot-side-foot">
+              Meta Ad Library · Live <span class="pivot-arrow">↗</span>
+            </div>
+          </a>
+          <a class="pivot-side pivot-right" href="https://www.instagram.com/therealyouclub/" target="_blank" rel="noopener">
+            <div class="pivot-side-label">The Real You</div>
+            <div class="pivot-side-sub">Founder-Led Marketing Agency</div>
+            <p class="pivot-side-desc">Copywriter. Ghostwrote personal content for founder Shreya Jein and Sarah Sham (Essajees Atelier). Wrote all social content for Drishti &amp; Zahabia and Organise With Ease.</p>
+            <div class="pivot-side-foot">
+              The Real You · Instagram <span class="pivot-arrow">↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
 
       <!-- 04 · Haiderlogy on Substack — full-width row -->
       <a class="card substack reveal" href="https://haiderlogy.substack.com/" target="_blank" rel="noopener">
@@ -991,7 +1096,7 @@
           <div>
             <div class="num">04 · Haiderlogy · Substack</div>
             <h3>Political & cultural analysis. Long reads with a point of view.</h3>
-            <p>A Substack covering the intersections of politics, culture, society, and everything that goes on inside my brain. It's raw and personal, but written with the same editorial precision that drives the newsroom work. Longer form, sharper angles, no algorithmic concessions. The place where the writing goes when it doesn't fit a desk brief.</p>
+            <p>A Substack covering the intersections of politics, culture, and society — written with the same editorial precision that drives the newsroom work. Longer form, sharper angles, no algorithmic concessions. The place where the writing goes when it doesn't fit a desk brief.</p>
           </div>
           <div class="foot">
             <span>haiderlogy.substack.com</span>
@@ -1009,14 +1114,28 @@
   <div class="container">
     <div class="section-head reveal">
       <h2>The <em>timeline.</em></h2>
-      <span class="meta">03 / 04 · 2021 → now</span>
+      <span class="meta">03 / 04 · 2021 → now · 2 active</span>
     </div>
     <div class="timeline">
       <div class="tl-item now reveal">
-        <div class="date">Nov 2025 – Jun 2026</div>
+        <div class="date">Jul 2026 – Present</div>
+        <h4>Creative Copywriter & Strategist</h4>
+        <div class="where">House of Shafaq · Dubai</div>
+        <p>Writing Meta ad copy and ICP-driven creative frameworks for House of Shafaq — a Dubai-based production and creator agency. Built persona-to-pain messaging matrices for BurntFilter, scripted talking-head creator videos across two avatar profiles, and developed a full ad copy workflow system to run messaging tests at scale.</p>
+      </div>
+
+      <div class="tl-item now reveal">
+        <div class="date">Jul 2026 – Present</div>
+        <h4>Copywriter</h4>
+        <div class="where">The Real You (TRU)</div>
+        <p>Social media copywriter at TRU — a founder-led marketing agency. Ghostwrite LinkedIn and Instagram personal content for TRU founder Shreya Jein and interior designer Sarah Sham (Essajees Atelier). Write all social content for client brands Drishti & Zahabia and Organise With Ease, covering captions, post copy, and carousel narratives.</p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="date">Nov 2025 – May 2026</div>
         <h4>Content Manager & Copyeditor</h4>
         <div class="where">Pro Football & Sports Network (PFSN)</div>
-        <p>Lead ideation and headline planning across peak NFL cycles: Super Bowl LX, NFL Combine, and the Draft. Helped drive 1.75M Apple News views during the April 2026 Google update by shifting toward high-intent audience segments. Built AI-assisted editorial systems and audited YouTube audio scripts. Edited 5,000+ articles to date.</p>
+        <p>Led ideation and headline planning across peak NFL cycles: Super Bowl LX, NFL Combine, and the Draft. Drove 1.75M Apple News views during the April 2026 Google update by shifting toward high-intent audience segments. Built AI-assisted editorial systems and audited YouTube audio scripts. Edited 5,000+ articles.</p>
       </div>
       <div class="tl-item reveal">
         <div class="date">Jun 2024 – Oct 2025</div>
@@ -1094,7 +1213,7 @@
   <div class="container narrow contact-block reveal">
     <span class="section-label" style="justify-content:center;">04 / 04 · Contact</span>
     <h2 style="margin-top:20px;">Let's <em>talk.</em></h2>
-    <p>Editorial operations, AI workflow consulting, contributor roles, or a coffee on Delhi time. Drop a line.</p>
+    <p>Brand copywriting, Meta ad strategy, social media content, editorial consulting, contributor roles, or a coffee on Delhi time. Drop a line.</p>
     <a href="mailto:syedtalibhaider02@gmail.com" class="email-big">syedtalibhaider02@gmail.com</a>
     <div class="channels">
       <a href="tel:+919910705987">+91 99107 05987</a>
